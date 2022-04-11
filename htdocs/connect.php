@@ -1,8 +1,8 @@
 <?php
 	// include("connect.php");
 	$servername = "localhost";#"sophia";
-	$username = "root";#"h3576160";
-	$password = "";#"sitwaita";
+	$username = "root";#"*******";
+	$password = "";#"******";
 	$dbName = "fitness_company";
 	 
 	// create connection
