@@ -19,15 +19,15 @@ $result = mysqli_query($con,$query) or die( "Unable to execute query:".mysqli_er
 
 echo "<!DOCTYPE html><html>";
 echo "<head>";
-echo "<title>Question 9_1</title>";
+echo "<title>district_branch</title>";
 echo "</head>";
 echo "<body  align=center>";
 echo "<h3>Q9_1 Answer</h3>";
 
-echo "<form action='q9.php' method='Post' align='center' >";
-// Step 2.2 Create a dropdown menu here.
+echo "<form action='district_branch.php' method='Post' align='center' >";
+// Create a dropdown menu.
 echo "<select name='ID'>";
-// Step 2.3. Add in options in the drop down menu here
+// Add in options in the drop down menu
 
 // Each selected tuple becomes an option in the dropdown menu.
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
