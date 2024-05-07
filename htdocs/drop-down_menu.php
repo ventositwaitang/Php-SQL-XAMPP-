@@ -19,7 +19,7 @@ $result = mysqli_query($con,$query) or die( "Unable to execute query:".mysqli_er
 
 echo "<!DOCTYPE html><html>";
 echo "<head>";
-echo "<title>district_branch</title>";
+echo "<title>district_branch menu</title>";
 echo "</head>";
 echo "<body  align=center>";
 echo "<h3>Q9_1 Answer</h3>";
