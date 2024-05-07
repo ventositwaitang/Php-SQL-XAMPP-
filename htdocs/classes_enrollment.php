@@ -22,10 +22,10 @@ $result = mysqli_query($con,$query) or die( "Unable to execute query:".mysqli_er
 
 echo "<!DOCTYPE html><html>";
 echo "<head>";
-echo "<title>Question 10</title>";
+echo "<title>classes_enrollment</title>";
 echo "</head>";
 echo "<body  align=center>";
-echo "<h3>Q10 Answer</h3>";
+echo "<h3>classes_enrollment</h3>";
 
 // display the table
 echo "<table border='1' align='center'>";
@@ -120,7 +120,7 @@ if ( $num_of_enrollment != 0) {
         
         foreach (explode(',', $row['classes_enrolled']) as &$enrolled) {
             if ($enrolled_classes[$enrolled_count] != $class_ID) {
-                echo "<a href='q10.php?class_ID=".$enrolled_classes[$enrolled_count]."'>".$enrolled."</a>";
+                echo "<a href='classes_enrollment.php?class_ID=".$enrolled_classes[$enrolled_count]."'>".$enrolled."</a>";
                 // echo "<a href=/q10.php?class_ID=".$row['enrolled_ID'].">".$row['classes_enrolled']."</a>";
             echo "<br>";
             }
@@ -138,7 +138,7 @@ echo "<br><a href='index.html'>back</a>";
 echo "</body>";
 echo "</html>";
 
-// last step: free the tuple result and close the MySQL database connection
+// free the tuple result and close the MySQL database connection
 mysqli_free_result($result);
 #mysqli_free_result($resultB);
 mysqli_close($con);
